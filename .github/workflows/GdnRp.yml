@@ -1,0 +1,14 @@
+name: Hello Gideon Workflow
+
+on:
+  push:  # Trigger this workflow when code is pushed to the repository
+    branches:
+      - main
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say Hello
+        run: echo "Hello, it's me Gideon"
